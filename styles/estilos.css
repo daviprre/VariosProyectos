@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,400;0,900;1,500&display=swap');
+*{
+    font-size: 62.5%; /* Ajuste de letra para utilizar el rem para el tamaño de letra */
+    margin:0;
+    padding: 0;
+    
+    /* font-family: 'Barlow Semi Condensed', sans-serif; */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle, #3a3959, #333353, #2d2d4e, #262748, #1f2143, #1c1e41, #181c3e, #15193c, #15193c, #15193c, #15193c, #15193c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+/***************************************/
+/***************HEADER******************/
+/***************************************/
+header{
+    border: 2px solid gray;
+    width: 70%;
+    height: 14%;
+    box-sizing: border-box;
+    margin-top: 3%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+}
+
+header .project{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    display: block;
+    width: 20%;
+    height: 80%;
+    text-align: start;
+    padding-left: 5%;
+}
+
+header .menu{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+
+}
+
+header .menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+header .menu ul li a{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/***************************************/
+/*****************MAIN******************/
+/***************************************/
+main{
+    height: 74%;
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+main .up{
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .up .up__circle{
+    margin-top: 5%;
+    border: 10px solid #f2a523;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 1.9rem;
+    color: #171724;
+    box-shadow:  7px 7px 14px #171724,
+                 -7px -7px 14px #5d5b8e;
+}
+
+
+
+main .center{
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .center .center__triangle{
+    width: 140px;
+    height: 140px;
+    background-color: transparent;
+    border: 0;
+    background-position: center;
+    background-image: url(../assets/images/triangle.png);
+    background-size: cover;
+    filter: drop-shadow(0 2px 15px #5d5b8e);
+}
+
+main .center .center__triangle p{
+    margin-top: 25%;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 1.9rem;
+    color: #171724;
+}
+
+main .center .center__square{
+    border: 10px solid #d23e54;
+    width: 130px;
+    height: 130px;
+    background: white;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 1.9rem;
+    color: #171724;
+    box-shadow:  7px 7px 14px #171724,
+                 -7px -7px 14px #5d5b8e;
+}
+
+main .down{
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .down .down__diamond{
+    border: 10px solid #8d5be5;
+    width: 115px;
+    height: 115px;
+    transform: rotate(45deg);
+    background: white;
+    box-shadow:  7px 7px 14px #171724,
+                 -7px -7px 14px #5d5b8e;
+}
+
+main .down .down__diamond p{
+    transform: rotate(-45deg);
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 1.9rem;
+    color: #171724;
+}
+
+/***************************************/
+/*****************FOOTER****************/
+/***************************************/
+footer{
+    width: 70%;
+    height: 10%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+footer .foot__left{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 1.5rem;
+    width: 50%;
+    height: 40%;
+    text-align: start;
+}
+
+footer .foot__right{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 1.5rem;
+    width: 50%;
+    height: 40%;
+    text-align: end;
+}
