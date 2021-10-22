@@ -23,13 +23,13 @@ body{
 header{
     border: 2px solid gray;
     width: 70%;
-    height: 14%;
+    height: auto;
     box-sizing: border-box;
+    padding: 10px 5% 30px 0;
     margin-top: 3%;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    padding-right: 5%;
 }
 
 header .project{
