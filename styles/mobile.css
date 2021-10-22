@@ -1,1 +1,53 @@
 /*Prueba para hacer primer commit desde nuevo repositorio*/
+@media screen and (max-width: 768px){
+    body{
+        height: 200vh;
+    }
+    header .project{
+        display: flex;
+        align-items: center;
+    }
+
+    header .menu{
+        justify-content: end;
+    
+    }
+
+    header .menu ul{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: flex-end;
+    }
+
+    main .up{
+        height: 25%;
+        padding-right: 10%;
+        justify-content: flex-end;
+    }
+    
+    main .center{
+        flex-direction: column;
+        height: 50%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 10%;
+    }
+
+    main .center .center__triangle{
+        align-self: flex-start;
+    }
+
+
+    main .center .center__square{
+        align-self: flex-end;
+    }
+
+
+    main .down{
+        height: 25%;
+        padding-left: 10%;
+        justify-content: flex-start;
+    }
+    
+}
