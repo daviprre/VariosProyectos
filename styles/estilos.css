@@ -71,11 +71,12 @@ header .menu ul li a{
 /*****************MAIN******************/
 /***************************************/
 main{
-    height: 74%;
+    height: auto;
     width: 70%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
 }
 
 main .up{
@@ -213,4 +214,109 @@ footer .foot__right{
     width: 50%;
     height: 40%;
     text-align: end;
+}
+
+/***************************************/
+/***************MAIN FIGURAS************/
+/***************************************/
+header .logo{
+    margin-left: 5%;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+header .title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border: 1px solid yellow;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .title h1{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/***************************************/
+/***************MAIN FIGURAS************/
+/***************************************/
+
+main .square{
+    margin-top: 50px;
+    height: auto;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 7% 0 7%;
+}
+
+
+
+main .square h2{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+main .square .square__card{
+    display: flex;
+    /* border: px solid yellow; */
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main .square .square__card .square__figure{
+    border: 1px solid blue;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+main .square .square__card .square__figure figure{
+    border: 7px solid #f2a523;
+    height: 150px;
+    width: 150px;
+    box-shadow:  7px 7px 14px #171724,
+    -7px -7px 14px #5d5b8e;
+    margin-left: 10% ;
+    margin-right: 10% ;
+}
+
+main .square .square__card .square__figure p{
+    border: 1px solid #f2a523;
+    height: 10px;
+    width: 40
+    %;
+
+}
+main .square .square__card .square__info{
+    border: 1px solid purple;
+    width: 50%;
+    height: 200px;
+
+
+}
+main .triangle{
+    height: 20px;
+    border: 1px solid purple;
+}
+
+main .circle{
+    height: 20px;
+    border: 1px solid pink;
 }
