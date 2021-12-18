@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" alt="Logo">
     <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/mobile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <p class="project">
-                Varios <br> Proyectos <br> Personales
-            </p>
-        </div>
+        <p class="project">
+            Varios <br> Proyectos <br> Personales
+        </p>
         <div class="title">
             <h1 >
                 Figuras Geometricas
@@ -23,43 +22,167 @@
     </header>
     <div class="main__container">
         <article class="square">
-            <h2 class="square__title">
-                Calculemos un Cuadrado
-            </h2>
-            <div class="square__card">
+            <div class="square__up">
+                <h2 class="square__title">
+                    Calculemos un Cuadrado
+                </h2>
+            </div>
+            
+            <div class="square__middle">
                 <div class="square__figure">
                     <figure>
 
                     </figure>
-                    <div>
-                        <p>
-                            Area:      
-                        </p>
-                        <p>
-                            Perimetro:          
-                        </p>
-                    </div>
                 </div>
                 <div class="square__info">
-                    <p>
-                        Porfavor, ingresa la medida de uno de los lados del Cuadrado
+                    <p class="square__info-up">
+                        Porfavor, ingresa la medida de uno de los lados del Cuadrado para obtener el area y el perimetro
                     </p>
-                    <input type="number">
-                    <div>
-                        <button></button>
-                        <button></button>
+                    <div class="square__info-down">
+                        <p>Lado:</p>
+                        <input type="number">
                     </div>
-
-
+                    
                 </div>
+            </div>
+            <div class="square__down">
+                    <div class="square__result">
+                        <div class="square__area">
+                            <p>
+                                Area:      
+                            </p>
+                            <p>
 
+                            </p>
+                        </div>
+                        <div class="square__perimeter">
+                            <p>
+                                    Perimetro:          
+                            </p>
+                            <p>
+
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="square__button">
+                        <button class="square__button-area">Area</button>
+                        <button class="square__button-perimeter">Perimetro</button>
+                    </div>
             </div>
 
         </article>
         <article class="triangle">
-
+            <div class="triangle__up">
+                <h2 class="triangle__title">
+                    Calculemos un Triangulo
+                </h2>
+            </div>
+            <div class="triangle__middle">
+                <div class="triangle__figure-left">
+                    <figure>
+    
+                    </figure>
+                </div>
+                <div class="triangle__info-right">
+                    <p class="triangle__info">
+                            Porfavor, ingresa la medida de los lados del triangulo, altura y base, para obtener el area y el perimetro
+                    </p>
+                    <div class="triangle__side_one">
+                        <p>Lado A: </p>
+                        <input type="number">
+                    </div>
+                    <div class="triangle__side_two">
+                        <p>Lado B: </p>
+                        <input type="number">
+                    </div>
+                    <div class="triangle__side_base">
+                        <p>Base: </p>
+                        <input type="number">
+                    </div>
+                    <div class="triangle__side_height">
+                        <p>Altura: </p>
+                        <input type="number">
+                    </div>
+                </div>
+            </div>
+            <div class="triangle__down">
+                <div class="triangue__results">
+                    <div class="triangle__area">
+                        <p>Area:</p>
+                        <p></p>
+                    </div>
+                    <div class="triangle__perimeter">
+                        <p>Perimetro:</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="triangle__buttons">
+                    <button>
+                        Area
+                    </button>
+                    <button>
+                        Perimetro
+                    </button>
+                </div>
+            </div>
+            
         </article>
         <article class="circle">
+            <div class="circle__up">
+                <h2 class="circle__title">
+                    Calculemos un Circulo
+                </h2>
+
+            </div>
+            <div class="circle__middle">
+                <div class="circle__figure">
+                    <figure>
+
+                    </figure>
+                </div>
+                <div class="circle__info">
+                    <p class="circle__info-up">
+                            Porfavor, ingresa el radio del circulo, para obtener el area y el perimetro
+                    </p>
+                    <div class="circle__info-down">
+                        <p>
+                            Radio: 
+                        </p>
+                        <input type="number">
+                    </div>
+                </div>
+
+            </div>
+            <div class="circle__down">
+                <div class="circle__result">
+                    <div class="circle__area">
+                        <p>
+                            Area:
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="circle__petimeter">
+                        <p>
+                            Perimetro:
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="circle__buttons">
+                    <button>
+                        Area
+                    </button>
+                    <button>
+                        Perimetro
+                    </button>
+                </div>
+            </div>
 
         </article>
 
