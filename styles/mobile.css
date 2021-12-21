@@ -57,8 +57,9 @@
 }
 
 @media screen and (max-width: 1100px){
-
+    /************FIGURAS**************/
     /************SQUARE**************/
+    /********************************/
     .main__container .square .square__middle{
         flex-direction: column;
         align-items: center;
@@ -180,48 +181,110 @@
         margin-top: 5%;
     }
 
-    @media screen and (max-width: 900px){
-        .main__container .square{
-            width: 80%;
-        }
-        .main__container .triangle{
-            width: 80%;
-        }
-        .main__container .circle{
-            width: 80%;
-        }
+    /************PROMEDIOS (1100)**************/
+    .cards__container article button{
+        height: auto;
     }
-
-    @media screen and (max-width: 600px){
-
-
-        .main__container .square{
-            width: 100%;
-        }
-        .main__container .triangle{
-            width: 100%;
-        }
-        .main__container .circle{
-            width: 100%;
-        }
-    }
-
-    
-    @media screen and (max-width: 500px){
-
-        header .title h1{
-            font-family: 'Barlow Semi Condensed', sans-serif; 
-            font-size: 2.5rem;
-        }
-    }
-
-    @media screen and (max-width: 450px){
-
-        header .title h1{
-            font-family: 'Barlow Semi Condensed', sans-serif; 
-            font-size: 2rem;
-        }
-    }
-
 
 }
+
+@media screen and (max-width: 900px){
+    .main__container .square{
+        width: 80%;
+    }
+    .main__container .triangle{
+        width: 80%;
+    }
+    .main__container .circle{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+
+    .main__container .square{
+        width: 100%;
+    }
+    .main__container .triangle{
+        width: 100%;
+    }
+    .main__container .circle{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+
+    header .title h1{
+        font-family: 'Barlow Semi Condensed', sans-serif; 
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    header .title h1{
+        font-family: 'Barlow Semi Condensed', sans-serif; 
+        font-size: 2rem;
+    }
+}
+
+
+   /************PROMEDIOS*************/
+   /**********************************/
+   /**********************************/
+@media screen and (max-width: 1100px){
+   .cards__container article button{
+    height: auto;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .cards__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards__container article{
+        width: 50%;
+    }
+
+    .cards__container article button{
+        height: 50px;
+    }
+    .cards__container .promedio__card{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-top: 10%;
+    }
+    .cards__container .mediana__card{
+        border-radius: 0;
+    }
+    .cards__container .moda__card{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-bottom: 10%;
+    }
+ }
+
+ @media screen and (max-width: 600px){
+
+    .cards__container article{
+        width: 70%;
+    }
+
+ }
+
+ @media screen and (max-width: 400px){
+
+    .cards__container article{
+        width: 90%;
+    }
+
+    .cards__container article input{
+        width: 80%;
+    }
+
+ }
