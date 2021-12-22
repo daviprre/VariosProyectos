@@ -806,3 +806,341 @@ header .title h1{
     border: 2px solid rgb(0, 66, 65);
     border-radius: 5%;
 }
+/***************************************/
+/***************SALARIOS****************/
+/***************************************/
+/***************************************/
+/***************************************/
+.card__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+/*************Anual Card****************/
+.anual__card{
+    background-color: rgb(255, 255, 255, 0.05);
+    border: 2px solid gray;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.anual__card .anual__up{
+    margin-top: 10%;
+}
+
+.anual__card .anual__up h3{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+
+.anual__card .anual__middle{
+    width: 80%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.anual__card .anual__middle p{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.anual__card .anual__middle select{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight:400;
+    text-align: center;
+}
+
+.anual__card .anual__down{
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.anual__card .anual__down p{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/*************Salario Card****************/
+.salario__card{
+    background-color: rgb(255, 255, 255, 0.05);
+    border: 1px solid gray;
+    margin-top: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.salario__card .salario__title{
+    margin-top: 10%;
+}
+
+.salario__card .salario__title h3{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.salario__card .salario__info{
+    width: 80%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.salario__card .salario__info .salario__info-left{
+    width: 70%;
+}
+
+.salario__card .salario__info .salario__info-left p{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 8%;
+}
+
+.salario__card .salario__info .salario__info-right{
+    width: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.salario__card .salario__info .salario__info-right input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.salario__card .salario__button{
+    width: 80%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.salario__card .salario__button button{
+    width: 40%;
+    height: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    border-radius: 15px;
+    border: 2px solid transparent;
+}
+
+.salario__card .salario__result{
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.salario__card .salario__result .salario__result-up{
+    width: 100%;
+}
+
+.salario__card .salario__result .salario__result-up p{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+
+}
+
+.salario__card .salario__result .salario__result-down{
+    width: 100%;
+    margin-top: 2%;
+}
+
+.salario__card .salario__result .salario__result-down p{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/*************Salarios Promedio****************/
+.sal-promedios__card{
+    background-color: rgb(255, 255, 255, 0.05);
+    border: 1px solid gray;
+    width: 50%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+
+.sal-promedios__card .sal-promedios__title{
+    margin-top: 5%;
+}
+
+.sal-promedios__card .sal-promedios__title h3{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration-line: underline;    
+}
+
+.sal-promedios__card .sal-promedios__in{
+    width: 80%;
+    align-self: center;
+    margin-top: 5%;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up p{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+    align-self: center;
+    width: 50%;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up input{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 400;
+    height: 30px;
+    width: 30%;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up button{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+    height: 25px;
+    width: 25px;
+    align-self: center;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .button__enviar{
+    background: url(../assets/icons/submit.png);
+    background-size: cover;
+    background-color: transparent;
+    border: transparent;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .button__limpiar{
+    background: url(../assets/icons/return.png);
+    background-size: cover;
+    background-color: transparent;
+    border: transparent;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down{
+    margin-top: 3%;
+    display: flex;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down p{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+    align-self: center;
+    margin-right: 10.5%;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down input{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 400;
+    height: 30px;
+    width: 30%;
+    margin-right: 2%;
+
+    
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down button{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+    height: 25px;
+    width: 25px;
+    align-self: center;
+}
+
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down .button__enviar{
+    background: url(../assets/icons/submit.png);
+    background-size: cover;
+    background-color: transparent;
+    border: transparent;
+}
+
+.sal-promedios__card .sal-promedios__buttons{
+    margin-top: 8%;
+    width: 80%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sal-promedios__card .sal-promedios__buttons button{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 400;
+    height: 35px;
+    width: 30%;
+    align-self: center;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+.sal-promedios__card .sal-promedios__result{
+    width: 80%;
+    align-self: center;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.sal-promedios__card .sal-promedios__result p{
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+    
+}

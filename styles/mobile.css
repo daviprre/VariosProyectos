@@ -288,3 +288,70 @@
     }
 
  }
+    /************SALARIOS*************/
+   /**********************************/
+   /**********************************/
+   @media screen and (max-width: 1200px){
+    .card__wrapper .anual__card{
+        width: 70%;
+     }
+
+    .card__wrapper .salario__card{
+        width: 70%;
+    }
+
+    .card__wrapper .sal-promedios__card{
+        width: 70%;
+    }
+ }
+
+ @media screen and (max-width: 900px){
+    .card__wrapper .anual__card{
+        width: 80%;
+     }
+
+    .card__wrapper .salario__card{
+        width: 80%;
+    }
+
+    .card__wrapper .sal-promedios__card{
+        width: 80%;
+    }
+ }
+
+ @media screen and (max-width: 760px){
+    .card__wrapper .anual__card{
+        width: 100%;
+     }
+
+    .card__wrapper .salario__card{
+        width: 100%;
+    }
+
+    .card__wrapper .sal-promedios__card{
+        width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 760px){
+    .card__wrapper{
+        width: 90%;
+     }
+ }
+
+ @media screen and (max-width: 440px){
+    .card__wrapper{
+        width: 100%;
+     }
+ }
+
+ @media screen and (max-width: 400px){
+    .card__wrapper .salario__card .salario__button button{
+        width: 60%;
+        height: auto;
+     }
+
+    .sal-promedios__card .sal-promedios__buttons button{
+        height: auto;
+    }
+ }
