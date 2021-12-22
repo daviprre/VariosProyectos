@@ -46,6 +46,7 @@ header .project{
     height: 80%;
     text-align: start;
     padding-left: 5%;
+    text-decoration: none;
 }
 
 header .menu{

@@ -23,7 +23,6 @@
         width: auto;
         align-items: flex-end;
     }
-
     main .up{
         height: 25%;
         padding-right: 10%;
@@ -54,6 +53,23 @@
         justify-content: flex-start;
     }
     
+}
+
+@media screen and (max-width: 500px){
+
+    main .up .up__circle{
+        margin-bottom: 20px;
+        margin-top: 100px;
+    }
+    main .up .up__triangle{
+        margin-bottom: 100px;
+    }
+    main .up .up__square{
+        margin-bottom: 100px;
+    }
+    main .up .up__circle{
+        margin-bottom: 100px;
+    }   
 }
 
 @media screen and (max-width: 1100px){
