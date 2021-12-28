@@ -43,7 +43,7 @@
                     </p>
                     <div class="square__info-down">
                         <p>Lado:</p>
-                        <input type="number">
+                        <input type="number" id="SideSquare">
                     </div>
                     
                 </div>
@@ -54,7 +54,7 @@
                             <p>
                                 Area:      
                             </p>
-                            <p>
+                            <p id="AreaCuadrado">
 
                             </p>
                         </div>
@@ -69,7 +69,7 @@
                         
                     </div>
                     <div class="square__button">
-                        <button class="square__button-area">Area</button>
+                        <button class="square__button-area" onclick="CalcularAreaCuadrado()">Area</button>
                         <button class="square__button-perimeter">Perimetro</button>
                     </div>
             </div>
@@ -199,6 +199,6 @@
             por Stiven Preciado
         </div>  
     </footer>
-    
+    <script src="Cal_figuras.js"></script>
 </body>
 </html>
