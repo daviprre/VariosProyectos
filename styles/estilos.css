@@ -378,6 +378,8 @@ header .title h1{
 
 .main__container .square .square__down .square__result .square__perimeter{
     width:70%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main__container .square .square__down .square__result .square__perimeter p{
@@ -385,6 +387,10 @@ header .title h1{
     font-size: 2rem;
     font-weight: 400;
     color: #FFFFFF;
+}
+
+.main__container .square .square__down .square__result .square__perimeter #PerimetroCuadrado{
+    color: #f2a523;
 }
 
 .main__container .square .square__down .square__button{
@@ -568,12 +574,31 @@ header .title h1{
     box-sizing: border-box;
 }
 
+.main__container .triangle .triangle__down .triangue__results .triangle__area{
+    display: flex;
+    justify-content: space-between;
+}
+
 .main__container .triangle .triangle__down .triangue__results p{
     color: #FFFFFF;
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
     font-weight: 400;
 }
+
+.main__container .triangle .triangle__down .triangue__results #AreaTriangle{
+    color: #5970fc;
+}
+
+.main__container .triangle .triangle__down .triangue__results .triangle__perimeter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__container .triangle .triangle__down .triangue__results #PerimeterTriangle{
+    color: #5970fc;
+}
+
 
 
 .main__container .triangle .triangle__down .triangle__buttons{
@@ -685,6 +710,7 @@ header .title h1{
     display: flex;
     margin-top: 5%;
     margin-bottom: 5%;
+    
 }
 
 .main__container .circle .circle__result{
@@ -696,6 +722,8 @@ header .title h1{
 
 .main__container .circle .circle__result .circle__area{
     width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main__container .circle .circle__result .circle__area p{
@@ -705,9 +733,16 @@ header .title h1{
     font-weight: 400;
 }
 
+.main__container .circle .circle__result .circle__area #AreaCircle{
+    color: #d23e54;
+}
+
+
 
 .main__container .circle .circle__result .circle__petimeter{
     width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main__container .circle .circle__result .circle__petimeter p{
@@ -715,6 +750,10 @@ header .title h1{
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
     font-weight: 400;
+}
+
+.main__container .circle .circle__result .circle__petimeter #PerimeterCircle{
+    color: #d23e54;
 }
 
 

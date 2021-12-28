@@ -62,7 +62,7 @@
                             <p>
                                     Perimetro:          
                             </p>
-                            <p>
+                            <p id="PerimetroCuadrado">
 
                             </p>
                         </div>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="square__button">
                         <button class="square__button-area" onclick="CalcularAreaCuadrado()">Area</button>
-                        <button class="square__button-perimeter">Perimetro</button>
+                        <button class="square__button-perimeter" onclick="CalcularPerimetroCuadrado()">Perimetro</button>
                     </div>
             </div>
 
@@ -93,19 +93,19 @@
                     </p>
                     <div class="triangle__side_one">
                         <p>Lado A: </p>
-                        <input type="number">
+                        <input type="number" id="SideTriangleA">
                     </div>
                     <div class="triangle__side_two">
                         <p>Lado B: </p>
-                        <input type="number">
+                        <input type="number" id="SideTriangleB">
                     </div>
                     <div class="triangle__side_base">
                         <p>Base: </p>
-                        <input type="number">
+                        <input type="number" id="SideTriangleBase">
                     </div>
                     <div class="triangle__side_height">
                         <p>Altura: </p>
-                        <input type="number">
+                        <input type="number" id="SideTriangleHeight">
                     </div>
                 </div>
             </div>
@@ -113,18 +113,18 @@
                 <div class="triangue__results">
                     <div class="triangle__area">
                         <p>Area:</p>
-                        <p></p>
+                        <p id="AreaTriangle"></p>
                     </div>
                     <div class="triangle__perimeter">
                         <p>Perimetro:</p>
-                        <p></p>
+                        <p id="PerimeterTriangle"></p>
                     </div>
                 </div>
                 <div class="triangle__buttons">
-                    <button>
+                    <button onclick="CalcularAreaTriangulo()">
                         Area
                     </button>
-                    <button>
+                    <button onclick="CalcularPerimetroTriangulo()">
                         Perimetro
                     </button>
                 </div>
@@ -152,7 +152,7 @@
                         <p>
                             Radio: 
                         </p>
-                        <input type="number">
+                        <input type="number" id="RadioCircle">
                     </div>
                 </div>
 
@@ -163,7 +163,7 @@
                         <p>
                             Area:
                         </p>
-                        <p>
+                        <p id="AreaCircle">
 
                         </p>
                     </div>
@@ -171,17 +171,17 @@
                         <p>
                             Perimetro:
                         </p>
-                        <p>
+                        <p id="PerimeterCircle">
 
                         </p>
                     </div>
                     
                 </div>
                 <div class="circle__buttons">
-                    <button>
+                    <button onclick="CalcularAreaCirculo()">
                         Area
                     </button>
-                    <button>
+                    <button onclick="CalcularPerimetroCirculo()">
                         Perimetro
                     </button>
                 </div>
