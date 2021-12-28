@@ -1145,3 +1145,132 @@ header .title h1{
     font-weight: 300;
     
 }
+/***************************************/
+/***************DESCUENTOS**************/
+/***************************************/
+/***************************************/
+/***************************************/
+
+.project__container{
+    width: 70%;
+    display: flex;
+
+}
+
+.project__container .find__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    width: 90%;
+    align-self: center;
+}
+
+.project__container .find__container input{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.project__container .find__container button{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 400;
+    border: 1px solid gray;
+}
+
+.project__container .find__container .find{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__container .find__container .find input{
+    width:79%;
+    border-radius: 15px;
+    height: 100%;
+    margin-top: 0;
+    color: #FFFFFF; 
+    padding-left: 5px;
+}
+
+.project__container .find__container .find button{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2.3rem;
+    font-weight: 400;
+    width: 19%;
+    height: 100%;   
+    border-radius: 5px;
+}
+
+.project__container .find__container .descount{
+    margin-top: 1%;
+    height: 40px;
+    width: 40%;
+    align-self: flex-end;
+    justify-content: space-between;
+    display: flex;
+}
+
+.project__container .find__container .descount input{
+    width: 48%;
+    border-radius: 15px;
+    height: 100%;
+    margin-top: 0;
+    color: #FFFFFF; 
+    padding-left: 5px;
+}
+
+.project__container .find__container .descount button{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2.3rem;
+    font-weight: 400;
+    width: 47%;
+    height: 100%;   
+    border-radius: 5px;
+}
+
+.project__container .products__container{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7%;
+
+}
+
+.project__container .products__container article{
+    margin: 1%;
+    margin-top: 5%;
+    width: 15%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgb(255,255,255, 0.5);
+    -moz-box-shadow: 0px 0px 0px 0px rgb(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 6px -1px rgb(255,255,255,0.5);
+}
+
+.project__container .products__container article img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.project__container .products__container article h3{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 5%;
+}
+
+.project__container .products__container article p{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}

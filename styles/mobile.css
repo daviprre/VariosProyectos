@@ -371,3 +371,133 @@
         height: auto;
     }
  }
+
+/************DESCUENTOS*************/
+/**********************************/
+/**********************************/
+
+@media screen and (max-width: 1200px){
+    .project__container .find__container .descount{
+        width: 60%;
+    }
+    .project__container .find__container .descount input{
+        width: 65%;
+    }
+    .project__container .find__container .descount button{
+        width: 32%;
+    }
+
+
+    .project__container .products__container article{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .project__container .find__container .descount{
+        margin-top: 3%;
+    }
+
+    .project__container .find__container .find input{
+        margin-right: 3%;
+    }
+
+    .project__container .find__container .descount input{
+        margin-right: 5%;
+    }
+
+    .project__container .products__container article{
+        width: 25%;
+    }
+
+
+ }
+
+ @media screen and (max-width: 700px){
+
+
+    .project__container .products__container article{
+        width: 30%;
+    }
+ }
+
+ @media screen and (max-width: 600px){
+    .project__container .find__container .descount{
+        width: 100%;
+    }
+
+    .project__container .find__container .descount input{
+        width: 79%;
+        margin-right: 3%;
+    }
+    .project__container .find__container .descount button{
+        width: 19%;
+    }
+
+    .project__container .products__container article{
+        width: 40%;
+    }
+
+
+ }
+
+ @media screen and (max-width: 550px){
+    .project__container .find__container{
+        height: 200px;
+    }
+    
+
+    .project__container .find__container .find{
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+    }
+
+    .project__container .find__container .find input{
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 0%;
+    }
+
+    .project__container .find__container .find button{
+        margin-top: 10px;
+        width: 30%;
+        align-self: flex-end;
+    }
+    
+    .project__container .find__container .descount{
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+    }
+
+    .project__container .find__container .descount input{
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 0%;
+    }
+
+    .project__container .find__container .descount button{
+        margin-top: 10px;
+        width: 30%;
+        align-self: flex-end;
+    }
+
+    .project__container .products__container{
+        justify-content: center;
+    }
+
+    .project__container .products__container article{
+        width: 60%;
+        margin-top: 15%;
+    }
+
+
+    
+
+
+
+ }
