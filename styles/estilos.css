@@ -360,13 +360,20 @@ header .title h1{
 
 .main__container .square .square__down .square__result .square__area{
     width:70%;
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .main__container .square .square__down .square__result .square__area p{
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
     font-weight: 400;
     color: #FFFFFF;
+}
+
+.main__container .square .square__down .square__result #AreaCuadrado {
+    color: #f2a523;
 }
 
 .main__container .square .square__down .square__result .square__perimeter{

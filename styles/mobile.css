@@ -222,11 +222,25 @@
     .main__container .square{
         width: 100%;
     }
+
+    .main__container .square .square__down .square__result{
+        flex-direction: column;
+    }
     .main__container .triangle{
         width: 100%;
     }
+
+    .main__container .triangle .triangle__down .triangue__results{
+        flex-direction: column;
+    }
+
     .main__container .circle{
         width: 100%;
+    }
+
+    .main__container .circle .circle__down .circle__result{
+        border: 1px solid red;
+        flex-direction: column;
     }
 }
 
