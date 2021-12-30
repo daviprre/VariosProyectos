@@ -26,14 +26,14 @@
                 Calculemos el Promedio
             </h3>
             <p class="promedio__description">
-                Ingresa porfavor el listado de numeros, para determinar el promedio:
+                Ingresa porfavor el listado de numeros, para determinar el promedio (separados por comas):
             </p>
-            <input class="pomedio__in" type="text">
-            <button class="promedio__button">
+            <input class="pomedio__in" type="text" id="inPromedio">
+            <button class="promedio__button" onclick="CalcularPromedio()">
                 Calcular Promedio
             </button>
-            <p class="promedio__out">
-
+            <p class="promedio__out" id="outPromedio">
+                
             </p>
 
         </article>
@@ -42,13 +42,13 @@
                 Calculemos la mediana
             </h3>
             <p class="mediana__description">
-                Ingresa porfavor el listado de numeros, para determinar el la mediana:
+                Ingresa porfavor el listado de numeros, para determinar el la mediana (separados por comas):
             </p>
-            <input class="mediana__in" type="text">
-            <button class="mediana__button">
+            <input class="mediana__in" type="text" id="inMediana">
+            <button class="mediana__button" onclick="CalcularMediana()">
                 Calcular Mediana
             </button>
-            <p class="mediana__out">
+            <p class="mediana__out" id="outMediana">
 
             </p>
         </article>
@@ -57,13 +57,13 @@
                 Calculemos la moda
             </h3>
             <p class="moda__description">
-                Ingresa porfavor el listado de numeros, para determinar el la moda:
+                Ingresa porfavor el listado de numeros, para determinar el la moda (separados por comas):
             </p>
-            <input class="moda__in" type="text">
-            <button class="moda__button">
+            <input class="moda__in" type="text" id="inModa">
+            <button class="moda__button" onclick="CalcularModa()">
                 Calcular Moda
             </button>
-            <p class="moda__out">
+            <p class="moda__out" id="outModa">
 
             </p>
         </article>
@@ -78,6 +78,8 @@
             por Stiven Preciado
         </div>  
     </footer>
+    <script src="Cal_promedios.js">
+    </script>
     
 </body>
 </html>
