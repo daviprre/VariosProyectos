@@ -1349,6 +1349,7 @@ header .title h1{
     font-weight: 400;
     color: #FFFFFF;
     margin-left: 5%;
+    margin-bottom: 10%;
 }
 
 .project__container .products__container article p{
@@ -1356,6 +1357,10 @@ header .title h1{
     font-size: 1.7rem;
     font-weight: 300;
     color: #FFFFFF;
-    margin-bottom: 5%;
+    
     margin-left: 5%;
+}
+
+.project__container .products__container article .outPrecio{
+    margin-bottom: 5%;
 }
