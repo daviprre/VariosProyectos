@@ -34,7 +34,7 @@
                 <p>
                     Selecciona un año:
                 </p>
-                <select name="" id="">
+                <select class="annio" name="" id="selectAnio">
                     <option value="value1">Selecciona...</option>
                     <option value="value2">2012</option>
                     <option value="value3">2013</option>
@@ -51,9 +51,9 @@
             </div>
             <div class="anual__down">
                 <p>
-                    Salario: 
+                    Salario:  
                 </p>
-                <p>
+                <p id="salario">
 
                 </p>
             </div>
@@ -68,7 +68,7 @@
             <div class="salario__info">
                 <div class="salario__info-left">
                     <p>
-                        Porcentaje de salario minimo:
+                        Cantidad de salarios minimos:
                     </p>
                     <p>
                         O Ingresa tu salario:
@@ -85,32 +85,32 @@
 
                 </div>
                 <div class="salario__info-right">
-                    <input type="number">
-                    <input type="number">
-                    <input type="number">
-                    <input type="number">
-                    <input type="number">
+                    <input type="number" id="inCantidadSalarios" value="0">
+                    <input type="number" id="inSalario" value="0">
+                    <input type="number" id="inDiurnas" value="0"> 
+                    <input type="number" id="inNocturnas" value="0">
+                    <input type="number" id="inFestivas" value="0">
                 </div>
             </div>
             <div class="salario__button">
-                <button>
+                <button onclick="CalculaSalario()">
                     Calcular Salario
                 </button>
             </div>
             <div class="salario__result">
-                <div class="salario__result-up">
+                <div class="salario__result-up" id="salarios_up">
                     <p>
                         Salario bruto:
                     </p>
-                    <p>
+                    <p id="outSalarioBruto">
 
                     </p>
                 </div>
-                <div class="salario__result-down">
+                <div class="salario__result-down" id="salarios_down">
                     <p>
                         Salario neto:
                     </p>
-                    <p>
+                    <p id="outSalarioNeto">
 
                     </p>
                 </div>
@@ -178,6 +178,7 @@
             por Stiven Preciado
         </div>  
     </footer>
+    <script src="Cal_salarios.js"></script>
     
 </body>
 </html>

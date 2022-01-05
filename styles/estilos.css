@@ -957,6 +957,9 @@ header .title h1{
     width: 80%;
     margin-top: 5%;
     margin-bottom: 10%;
+    justify-content: space-between; 
+    align-items: center;
+
 }
 
 .anual__card .anual__down p{
@@ -964,6 +967,7 @@ header .title h1{
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
     font-weight: 300;
+    
 }
 
 /*************Salario Card****************/
@@ -1051,10 +1055,14 @@ header .title h1{
     flex-direction: column;
     align-items: center;
     margin-bottom: 10%;
+    
 }
 
 .salario__card .salario__result .salario__result-up{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .salario__card .salario__result .salario__result-up p{
@@ -1068,6 +1076,8 @@ header .title h1{
 .salario__card .salario__result .salario__result-down{
     width: 100%;
     margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .salario__card .salario__result .salario__result-down p{
