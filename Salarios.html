@@ -124,36 +124,43 @@
             </div>
             <div class="sal-promedios__in">
                 <div class="sal-promedios__in-up">
-                    <p>
-                        Cantidad de salarios:
-                    </p>
-                    <input type="text">
-                    <button class="button__enviar">
-                    </button>
-                    <button class="button__limpiar">
-                    </button>
+                    <div class="sal-promedios_in-up-data">
+                        <p>
+                                Cantidad de salarios:
+                        </p>
+                        <input type="text" id="inCantidad">
+                        <button class="button__enviar" onclick="ValidarCantidadSalarios()">
+                        </button>
+                        <button class="button__limpiar" onclick="LimpiarCampos()">
+                        </button>
+                    </div>
+                    <div class="sal-promedios_in-up-message" >
+                        <p id="txtCantidadSalario">Ingresa la cantidad de salarios a promediar</p>
+                    </div>
                 </div>
                 <div class="sal-promedios__in-down">
-                    <p>
-                        Ingresa salario:
-                    </p>
-                    <p>
-
-                    </p>
-                    <input type="text">
-                    <button class="button__enviar">
-                    </button>
+                    <div class="sal-promedios__in-down-data">
+                        <p>
+                            Ingresa salario:
+                        </p>
+                        <input type="text" id="inSalariosLista">
+                        <button class="button__enviar" onclick="llenarArregloSalarios()">
+                        </button>
+                    </div>
+                    <div class="sal-promedios__in-down-message">
+                        <p id="txtListadoSalario"></p>
+                    </div>
                 </div>
                 
             </div>
             <div class="sal-promedios__buttons">
-                <button>
+                <button onclick="CalcularPromedio()">
                     Promedio
                 </button>
-                <button>
+                <button onclick="CalcularMediana()">
                     Mediana
                 </button>
-                <button>
+                <button onclick="CalcularMediaArmonica()">
                     Media (arm)
                 </button>
             </div>
@@ -161,7 +168,7 @@
                 <p>
                     Resultado:
                 </p>
-                <p>
+                <p id="OutResultadoSalarios">
 
                 </p>
 

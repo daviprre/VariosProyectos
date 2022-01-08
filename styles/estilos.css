@@ -1116,14 +1116,22 @@ header .title h1{
     width: 80%;
     align-self: center;
     margin-top: 5%;
+    
+
 }
 
 .sal-promedios__card .sal-promedios__in .sal-promedios__in-up{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.sal-promedios__card .sal-promedios__in .sal-promedios__in-up p{
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .sal-promedios_in-up-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .sal-promedios_in-up-data p{
     color: #FFFFFF;
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
@@ -1132,15 +1140,16 @@ header .title h1{
     width: 50%;
 }
 
-.sal-promedios__card .sal-promedios__in .sal-promedios__in-up input{
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .sal-promedios_in-up-data input{
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
     font-weight: 400;
     height: 30px;
     width: 30%;
+    
 }
 
-.sal-promedios__card .sal-promedios__in .sal-promedios__in-up button{
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .sal-promedios_in-up-data button{
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
     font-weight: 300;
@@ -1149,46 +1158,72 @@ header .title h1{
     align-self: center;
 }
 
-.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .button__enviar{
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .sal-promedios_in-up-data .button__enviar{
     background: url(../assets/icons/submit.png);
     background-size: cover;
     background-color: transparent;
     border: transparent;
 }
 
-.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .button__limpiar{
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .sal-promedios_in-up-data .button__limpiar{
     background: url(../assets/icons/return.png);
     background-size: cover;
     background-color: transparent;
     border: transparent;
 }
 
-.sal-promedios__card .sal-promedios__in .sal-promedios__in-down{
-    margin-top: 3%;
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .sal-promedios_in-up-message{
     display: flex;
 }
 
-.sal-promedios__card .sal-promedios__in .sal-promedios__in-down p{
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-up .sal-promedios_in-up-message p{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+    width: 100%;
+    color : rgb(255,105,97);
+    text-align: center;
+}
+
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down .sal-promedios__in-down-data{
+    display: flex;
+
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down .sal-promedios__in-down-data p{
     color: #FFFFFF;
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
     font-weight: 300;
     align-self: center;
     margin-right: 10.5%;
+
 }
 
-.sal-promedios__card .sal-promedios__in .sal-promedios__in-down input{
+
+
+
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down .sal-promedios__in-down-data input{
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
     font-weight: 400;
     height: 30px;
     width: 30%;
     margin-right: 2%;
+    display: none;
 
     
 }
 
-.sal-promedios__card .sal-promedios__in .sal-promedios__in-down button{
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down .sal-promedios__in-down-data button{
     font-family: 'Barlow Semi Condensed', sans-serif; 
     font-size: 2rem;
     font-weight: 300;
@@ -1196,6 +1231,21 @@ header .title h1{
     width: 25px;
     align-self: center;
 }
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down .sal-promedios__in-down-message{
+    display: flex;
+}
+
+.sal-promedios__card .sal-promedios__in .sal-promedios__in-down .sal-promedios__in-down-message p{
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+    font-size: 2rem;
+    font-weight: 300;
+    width: 100%;
+    color : rgb(255,105,97);
+    text-align: center;
+}
+
+
 
 
 .sal-promedios__card .sal-promedios__in .sal-promedios__in-down .button__enviar{

@@ -29,6 +29,17 @@ let festivas = 0;
 let SalarioBruto = 0;
 let SalarioNeto = 0;
 
+/************************************************/
+/***************Promediar salarios***************/
+/************************************************/
+let inCantidad = document.getElementById("inCantidad");
+let inListaSalarios = document.getElementById("inSalariosLista");
+let msjCantidadSalarios = document.getElementById("txtCantidadSalario");
+let msjListaSalarios = document.getElementById("txtListadoSalario");
+let cantidadSalarios = 0;
+let SalarioIngresado = 0;
+let arregloSalarios = [];
+
 /************************************************************************************************************/
 /********************Funciones*******************/
 /****************Salario x año*******************/
@@ -141,3 +152,132 @@ function CalculaSalario(){
 
 
 }
+
+/* let auxiliar = 0; //Borrar esto, es solo para mirar como ocultar el elemento donde se ingresaran los salarios
+
+
+if(auxiliar==0){
+    inListaSalarios.style = "display : flex";
+}
+else{
+    inListaSalarios.style = "display : none";
+}
+
+ */
+
+/************************************************/
+/****************Promediar salarios**************/
+/************************************************/
+function ValidarCantidadSalarios(){
+    cantidadSalarios = parseInt(inCantidad.value);
+
+
+    if(cantidadSalarios > 0){
+        inListaSalarios.style = "display : flex";
+        msjListaSalarios.innerText = "Debes ingresar " + cantidadSalarios + " salarios";
+        msjCantidadSalarios.innerText = "";
+    }
+    else{
+        inListaSalarios.style = "display : none";
+        msjCantidadSalarios.innerText = "Por favor ingrese un numero valido";
+    }
+
+}
+function llenarArregloSalarios(){
+    SalarioIngresado = parseFloat(inListaSalarios.value);
+    arregloSalarios.unshift (SalarioIngresado);
+    inListaSalarios.value = "";
+
+    if(cantidadSalarios > 1){
+        cantidadSalarios = cantidadSalarios - 1;
+        msjListaSalarios.innerText = "Debes ingresar " + cantidadSalarios + " salarios";
+    }
+    else{
+        msjListaSalarios.innerText = "No tienes salarios por ingresar";
+        inListaSalarios.style = "display : none";
+    }
+}
+
+let SumaTotal = 0;
+let CantLista = 0;
+let Total = 0;
+let OutResultadoSalarios = document.getElementById("OutResultadoSalarios");
+
+
+function CalcularPromedio(){
+    SumaTotal = 0;
+    listadoPromedio = arregloSalarios;
+    CantLista = listadoPromedio.length;
+    Total = 0;
+    for (var i = 0; i < CantLista; i++){
+        SumaTotal = SumaTotal + parseInt(listadoPromedio[i]);
+    }
+    Total = SumaTotal / CantLista;
+    if (Total > 0){
+        OutResultadoSalarios.innerText = "R=/ El Promedio es: " + Total.toFixed(2);
+    }
+    else{
+        OutResultadoSalarios.innerText = "";
+    }
+
+}
+
+function CalcularMediana(){
+    var aux = 0;
+    var aux2 = 0;
+    var Numero = 0;
+    var Numero2 = 0;
+    Total = 0;
+    listadoMediana = arregloSalarios;
+    listadoMedianaOrdenada = listadoMediana.sort((a,b)=>{
+        return a-b;
+    });
+
+    if(((listadoMedianaOrdenada.length)% 2) != 0){
+        aux = (listadoMedianaOrdenada.length / 2);
+        aux = parseInt(aux);
+        Total = listadoMedianaOrdenada[aux];
+        OutResultadoSalarios.innerText = "R=/ El Promedio es: " + Total;
+    }
+    else{
+        aux = (listadoMedianaOrdenada.length / 2);
+        aux2 = aux - 1;
+        Numero = parseInt(listadoMedianaOrdenada[aux]);
+        Numero2 = parseInt(listadoMedianaOrdenada[aux2]);
+        Total = (Numero + Numero2) / 2;
+        OutResultadoSalarios.innerText = "R=/ La mediana es: " + Total.toFixed(0);
+    }
+
+
+}
+
+function CalcularMediaArmonica(){
+    debugger;
+    var aux = 0;
+    Total = 0;
+    listadoMediana = arregloSalarios;
+
+    for (var i = 0; i < listadoMediana.length; i++){
+
+        aux = aux + (1/listadoMediana[i]);
+
+    }
+
+    Total = listadoMediana.length / aux;
+    OutResultadoSalarios.innerText = "R=/ La media armonica es: " + Total.toFixed(0);
+
+
+}
+
+function LimpiarCampos(){
+    msjListaSalarios.innerText = "";
+    msjCantidadSalarios.innerText = "Ingresa la cantidad de salarios a promediar";
+    inListaSalarios.style = "display : none";
+    inCantidad.value = "";
+    arregloSalarios = [];
+    OutResultadoSalarios.innerText = "";
+}
+
+
+
+ 
